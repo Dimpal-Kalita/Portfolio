@@ -1,4 +1,4 @@
-baseURL: "dimpal-kalita.github.io"
+baseURL: "dimpal.netlify.app"
 languageCode: "en-us"
 title: "ksensei"
 theme: hugo-profile
@@ -328,7 +328,7 @@ params:
         image: /images/projects/letsnormalizeit.png
         featured:
           name: Demo
-          link: https://letsnormalizeit.netlify.com/
+          link: https://letsnormalizeit.netlify.app/
         badges:
           - "React"
           - "SCSS"
