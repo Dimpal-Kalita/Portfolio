@@ -1,0 +1,408 @@
+baseURL: "dimpal-kalita.github.io"
+languageCode: "en-us"
+title: "ksensei"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Menus:
+#   main:
+#     - identifier: blog
+#       name: Blog
+#       title: Blog posts
+#       url: /blogs
+#       weight: 1
+#     - identifier: gallery
+#       name: Gallery
+#       title: Blog posts
+#       url: /gallery
+#       weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "ksensei"
+  description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+  
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "ksensei" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Dimpal Kalita"
+    subtitle: "I build things"
+    content: "A passionate software developer. I tend to make use of modern technologies to build great projects that feels fantastic, and functions correctly."
+    image: /images/hero.svg
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: "https://drive.google.com/file/d/1_5qnKsokCJQsRhN6FiAOM871-DvhDfL4/view"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/Dimpal-Kalita
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/dimpal-kalita-819121226/
+      customIcons:
+        - icon: /cf.png
+          url: "https://codeforces.com/profile/_Dimpal_"
+        - icon: /cc.png
+          url: "https://www.codechef.com/users/dk_sensei"
+
+        
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.png"
+    content: |-
+      I am a final year student pursuing my B.Tech in Computer Science & Engineering (CSE) from the National Institute of Technology, Silchar.
+
+      I have combinedly solved 1500+ questions across various coding platforms like Leetcode, Codeforces,Codechef. I regularly participate in various coding contests and have been able to secure a rank in the top 100 in various contests.
+
+      I am currently working on a project that will be used to help people distinguish between human and AI generated text.
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with recently:"
+      items:
+        - "React"
+        - "Node"
+        - "Express"
+        - "C/C++"
+        - "MongoDB"
+        - "GO"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Model Trainer"
+        company: "Remotasks"
+        companyUrl: "remotasks.com"
+        date: "Jan 2024 - present"
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"
+        content: "Training AI models to analyze large datasets using Python libraries (Pandas, NumPy, Matplotlib and  identifying and diagnosing software bugs and performance issues"
+
+      # - job: "Software Developer"
+      #   company: "Amazon"
+      #   companyUrl: "https://example.com"
+      #   date: "Sep 2020 - Dec 2021"
+      #   featuredLink:
+      #     enable: true
+      #     url: "https://example.com"
+      #   info:
+      #     enable: true
+      #     content: I worked as a software developer for more than one year in Amazon.
+      #   content: |
+      #     I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+      #     - Lead backend developer for a product.
+      #     - Created a frontend design for a product.
+
+      # - job: "Junior Software Developer"
+      #   company: "Apple"
+      #   companyUrl: "https://example.com"
+      #   date: "Jan 2020 - Aug 2020"
+      #   info:
+      #     enable: false
+      #   featuredLink:
+      #     enable: true
+      #     url: "https://example.com"
+      #   content: |
+      #     I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+      #     - Lead backend developer for a product.
+      #     - Created a frontend design for a product.
+
+      # - job: "UI/UX Designer"
+      #   company: "Netflix"
+      #   companyUrl: "https://example.com"
+      #   date: "June 2017 - Nov 2019"
+      #   featuredLink:
+      #     enable: true
+      #     url: "https://example.com"
+      #   content: |
+      #     I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+      #     - Lead backend developer for a product.
+      #     - Created a frontend design for a product.
+
+      # - job: "Product Designer"
+      #   company: "Google"
+      #   companyUrl: "https://example.com"
+      #   date: "Feb 2016 - Mar 2017"
+      #   content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "B.Tech  in Computer Science and Engineering"
+        school:
+          name: "National Institute of Technology, Silchar."
+          url: "https://www.nits.ac.in/"
+        date: "2021 - 2025"
+        GPA: "8.38 out of 10"
+        # content: |-
+        #   I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
+        #   - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
+        #   - Face mask detection using a single convolutional neural network.
+
+        #   Extracurricular Activities
+        #     - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        #     - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+        featuredLink:
+          enable: false
+          name: "My academic record"
+          url: "https://example.com"
+      - title: "Higher Secondary"
+        school:
+          name: "Ramanujan Junior College, Nagaon"
+          # url: "https://example.org"
+        date: "2019 - 2021"
+        GPA: "92,2%"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+      - title: "High School"
+        school:
+          name: "Madhya Panduri Higher Secondary School, Jamtola"
+          # url: "https://example.org"
+        date: "2019"
+        GPA: "89.33%"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+
+  # Achievements
+  achievements:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Google kickstart
+        content: Earned a distinguished Global rank 741 in the highly competitive Google Kickstart Round F 2022.
+        url: "https://drive.google.com/file/d/1nqZBgExDpAiDiPyAkZ7PEQGsagwunN_R/view"
+        # image: /images/achievment.jpg
+      - title: Inter College Programming Contest
+        content: Achieved an All-India rank of 58 and qualified for the Inter College Programming Contest regional 2022.
+        url: "https://drive.google.com/file/d/1USJr9Eq256-Mv_IT5KA4YeVnfQGsbf5N/view"
+        # image: /images/achievment.jpg
+      - title: Expert On Codeforces
+        content: Attained Expert rating (maximum 1793) on Codeforces.
+        url: "https://codeforces.com/profile/_Dimpal_"
+        # image: /images/achievment.jpg
+      - title: 5 Star On Codechef
+        content: Achieved 5 star rating (maximum 2112) on Codechef.
+        url: https://www.codechef.com/users/dk_sensei
+      - title: Guardian on Leetcode
+        content: Achieved Guardian rating (maximum 2356) on Leetcode.
+        url: https://leetcode.com/u/dk_sensei/ 
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Ecell Webpage 
+        content: The Website was initially built with simple HTML CSS JS only, So there was too much redudancy in the code base,made the codease much cleaner and readable with the help of Express JS. Currently working to recreate the webpage using React JS
+        image: /images/projects/Ecell.png
+        featured:
+          name: Demo
+          link:
+        badges:
+          - "React"
+          - "CSS"
+          - "Javascript"
+        links:
+          - icon: fab fa-github
+            url:  https://github.com/Dimpal-Kalita/e-cell-website-22
+
+      - title: LetsNormalizeIt
+        content: A website to promote sexual wellness and provide information about sexual health with a blog section to share personal experiences.
+        image: /images/projects/letsnormalizeit.png
+        featured:
+          name: Demo
+          link: https://letsnormalizeit.netlify.com/
+        badges:
+          - "React"
+          - "SCSS"
+          - "MongoDB"
+          - "Express"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/converter
+
+      - title: AIvsHuman
+        content: A project that will be used to help people distinguish between human and AI generated text using deep learning.
+        image: /images/projects/AIvsHuman.png
+        featured:
+          name: Demo
+          # link: https://hugo-profile-2.netlify.app
+        badges:
+          - "Tensorflow"
+          - "Python"
+          - "React"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/Dimpal-Kalita/AIvsHuman
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    btnName: Mail me
+    btnLink: mailto:kalitadimpal112@gmail.com
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/Dimpal-Kalita
+      linkedin: https://linkedin.com/in/dimpal-kalita-819121226/
+      twitter: https://twitter.com/N_dragneel_
+      instagram: https://www.instagram.com/dimpal_kalita_99/
+      facebook: https://www.facebook.com/dimpalkalita99/
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
